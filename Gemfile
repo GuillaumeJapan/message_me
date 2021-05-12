@@ -5,6 +5,9 @@ ruby '3.0.0'
 
 # Added gems
 gem 'semantic-ui-sass'
+gem 'bcrypt', '~> 3.1', '>= 3.1.16'
+# Hirb get a tabular view of table records in the console
+gem 'hirb'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
