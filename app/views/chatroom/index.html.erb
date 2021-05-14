@@ -7,12 +7,14 @@
   <div class="twelve wide column">
     <div class="ui fluid raised card chatbox">
       <div class="content">
-        <div class="ui feed">
-          <%= render @messages %>
+        <div class="ui feed" id="message-container">
+          <% if !@messages.nil? %>
+            <%= render @messages %>
+          <% end %>
         </div>
       </div>
       <div class="extra content">
-        <%= form_with scope: @message, url: message_path, class: "ui reply form" do |f| %>
+        <%= form_with scope: @message, url: messages_path, local: false, class: "ui reply form" do |f| %>
           <div class="field">
             <div class="ui fluid icon input">
               <%= f.text_field :body, placeholder: "Type a message..." %>
