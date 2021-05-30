@@ -5,13 +5,13 @@
 
 // Semantic UI
 require("semantic-ui-sass")
+require("packs/semantic_ui")
 
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
-import "navigation"
-import "messages"
+import "chatroom"
 
 Rails.start()
 Turbolinks.start()

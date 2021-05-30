@@ -2,6 +2,7 @@ import consumer from "./consumer"
 
 consumer.subscriptions.create("ChatroomChannel", {
   connected() {
+    scroll_bottom();
   },
 
   disconnected() {
@@ -9,6 +10,7 @@ consumer.subscriptions.create("ChatroomChannel", {
   },
 
   received(data) {
-    $('#message-container').append(data.content)
+    $('#message-container').append(data.content);
+    scroll_bottom();
   }
 });
