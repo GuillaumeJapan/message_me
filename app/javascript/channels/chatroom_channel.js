@@ -3,6 +3,7 @@ import consumer from "./consumer"
 consumer.subscriptions.create("ChatroomChannel", {
   connected() {
     scroll_bottom();
+    submit_message();
   },
 
   disconnected() {
