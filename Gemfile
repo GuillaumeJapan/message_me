@@ -61,8 +61,6 @@ end
 group :production do
   # Use postgresql database in production
   gem 'pg', '~> 1.2', '>= 1.2.3'
-  # Redis for action cable to work in production
-  gem 'redis', '~> 4.2', '>= 4.2.5'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
